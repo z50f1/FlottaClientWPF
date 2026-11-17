@@ -1,0 +1,28 @@
+﻿<Window x:Class="FlottaClientWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlottaClientWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+        <StackPanel>
+            <Label Content="LoginName" />
+            <TextBox x:Name="tbxLoginName" 
+                     Text="probaodon"/>
+            <Label Content="Password" />
+            <TextBox x:Name="tbxPassword" 
+                     Text="proba1"/>
+            <Button x:Name="btnLogin"
+                    Content="Login" 
+                    Click="btnLogin_Click"/>
+            <TextBlock x:Name="tbkToken"/>
+
+        </StackPanel>
+    </Grid>
+</Window>
